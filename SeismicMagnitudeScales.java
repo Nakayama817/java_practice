@@ -8,11 +8,6 @@ public class SeismicMagnitudeScales {
 
         String[] stringArray = new java.util.Scanner(System.in).nextLine().split(" ");
 
-        //int[] intArray = new int[0];
-        //for(int i = 0; i < stringArray.length; i++){
-        //    intArray[i] = Integer.parseInt(stringArray[i]);
-        //}
-
         int[] intArray = Stream.of(stringArray).mapToInt(Integer::parseInt).toArray();
 
 
@@ -21,3 +16,13 @@ public class SeismicMagnitudeScales {
 	}
 
 }
+
+
+
+
+
+//      memo
+        // int[] intArray = new int[0];
+        // for(int i = 0; i < stringArray.length; i++){
+        //    intArray[i] = Integer.parseInt(stringArray[i]);
+        // }

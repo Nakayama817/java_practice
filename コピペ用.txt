@@ -1,0 +1,40 @@
+１．文字列の中の重複を探す
+    Scanner scanner = new Scanner(System.in);
+    String[] sAry = scanner.next().split("");   
+    
+    scanner.close();
+    
+    for(int i = 0; i < sAry.length-1; i++){
+        for(int j = (i + 1); j < sAry.length; j++){
+            if(sAry[i].equals(sAry[j])){
+                
+                System.out.println(sAry[j]);
+            }
+        }
+    }
+
+２．文字列を数値に変換（forを使う場合）
+
+        int[] intArray = new int[0];
+        for(int i = 0; i < stringArray.length; i++){
+            intArray[i] = Integer.parseInt(stringArray[i]);
+        }
+
+３．文字列を数値に変換（mapを使う場合）java.util.stream.Stream
+
+    int[] intArray = Stream.of(stringArray).mapToInt(Integer::parseInt).toArray();
+
+
+４．文字列が等しいかどうか
+    if (Arrays.equals(sAry, tAry))
+
+５．配列のコピー
+    String[] tAry2 = Arrays.copyOf(tAry, tAry.length);
+
+６．文字列を配列化
+    Scanner scanner = new Scanner(System.in);
+    String[] sAry = scanner.next().split("");
+    scanner.close();
+
+７．文字列を配列化（ToCharArrayを使用）
+    char[] arr = str.ｔoCharArray();
